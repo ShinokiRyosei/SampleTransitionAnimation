@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39095E8D1D3D9B69008DAB85 /* CustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39095E8C1D3D9B69008DAB85 /* CustomPresentationController.swift */; };
 		398575531D3B43EB00E10C0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398575521D3B43EB00E10C0F /* AppDelegate.swift */; };
 		398575551D3B43EB00E10C0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398575541D3B43EB00E10C0F /* ViewController.swift */; };
 		398575581D3B43EB00E10C0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398575561D3B43EB00E10C0F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39095E8C1D3D9B69008DAB85 /* CustomPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationController.swift; sourceTree = "<group>"; };
 		3985754F1D3B43EB00E10C0F /* SampleTransitionAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTransitionAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		398575521D3B43EB00E10C0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		398575541D3B43EB00E10C0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				398575591D3B43EB00E10C0F /* Assets.xcassets */,
 				3985755B1D3B43EB00E10C0F /* LaunchScreen.storyboard */,
 				3985755E1D3B43EB00E10C0F /* Info.plist */,
+				39095E8C1D3D9B69008DAB85 /* CustomPresentationController.swift */,
 			);
 			path = SampleTransitionAnimation;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				398575551D3B43EB00E10C0F /* ViewController.swift in Sources */,
 				398575531D3B43EB00E10C0F /* AppDelegate.swift in Sources */,
+				39095E8D1D3D9B69008DAB85 /* CustomPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				398575791D3B43EB00E10C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3985757A1D3B43EB00E10C0F /* Build configuration list for PBXNativeTarget "SampleTransitionAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				3985757C1D3B43EB00E10C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3985757D1D3B43EB00E10C0F /* Build configuration list for PBXNativeTarget "SampleTransitionAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				3985757F1D3B43EB00E10C0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

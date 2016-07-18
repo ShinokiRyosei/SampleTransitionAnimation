@@ -36,6 +36,13 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
+        if presented ==  self {
+            
+        }
+        return nil
+    }
 
 
 }
