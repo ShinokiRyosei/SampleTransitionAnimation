@@ -15,6 +15,7 @@
 		3985755D1D3B43EB00E10C0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3985755B1D3B43EB00E10C0F /* LaunchScreen.storyboard */; };
 		398575681D3B43EB00E10C0F /* SampleTransitionAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398575671D3B43EB00E10C0F /* SampleTransitionAnimationTests.swift */; };
 		398575731D3B43EB00E10C0F /* SampleTransitionAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398575721D3B43EB00E10C0F /* SampleTransitionAnimationUITests.swift */; };
+		39B718DD1D3E1CF9003DFCCE /* CustomPresentationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B718DC1D3E1CF9003DFCCE /* CustomPresentationAnimationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3985756E1D3B43EB00E10C0F /* SampleTransitionAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTransitionAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		398575721D3B43EB00E10C0F /* SampleTransitionAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTransitionAnimationUITests.swift; sourceTree = "<group>"; };
 		398575741D3B43EB00E10C0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39B718DC1D3E1CF9003DFCCE /* CustomPresentationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentationAnimationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3985755B1D3B43EB00E10C0F /* LaunchScreen.storyboard */,
 				3985755E1D3B43EB00E10C0F /* Info.plist */,
 				39095E8C1D3D9B69008DAB85 /* CustomPresentationController.swift */,
+				39B718DC1D3E1CF9003DFCCE /* CustomPresentationAnimationController.swift */,
 			);
 			path = SampleTransitionAnimation;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				398575551D3B43EB00E10C0F /* ViewController.swift in Sources */,
+				39B718DD1D3E1CF9003DFCCE /* CustomPresentationAnimationController.swift in Sources */,
 				398575531D3B43EB00E10C0F /* AppDelegate.swift in Sources */,
 				39095E8D1D3D9B69008DAB85 /* CustomPresentationController.swift in Sources */,
 			);
