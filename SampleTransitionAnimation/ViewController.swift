@@ -39,10 +39,27 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
         if presented ==  self {
-            
+            return CustomPresentationController(presentedViewController: presented, presentingViewController: presenting)
         }
         return nil
     }
+    
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if presented == self {
+            return CustomPresentationAnimationController(isPresenting: true)
+        }
+        
+        return nil
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if dismissed == self {
+            return CustomPresentationAnimationController(isPresenting: true)
+        }
+        return nil
+    }
+    
+    
 
 
 }
