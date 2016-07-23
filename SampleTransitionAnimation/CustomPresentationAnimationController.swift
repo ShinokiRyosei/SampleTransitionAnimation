@@ -23,26 +23,34 @@ class CustomPresentationAnimationController: NSObject, UIViewControllerAnimatedT
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         if isPresenting  {
-            self.animatePresentionWithTransitionContext(transitionContext)
+            self.animatePresentationWithTransitionContext(transitionContext)
         }else {
             self.animateDismissWithTransitionContext(transitionContext)
         }
     }
     
     
-    func animatePresentionWithTransitionContext(transitionContext: UIViewControllerContextTransitioning) {
-        guard let presentedController = transitionContext.viewControllerForKey(UITransitionContextToViewKey), let presentedControllerView = transitionContext.viewForKey(UITransitionContextToViewKey),
+    func animatePresentationWithTransitionContext(transitionContext: UIViewControllerContextTransitioning) {
+        guard let presentedController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey), let presentedControllerView = transitionContext.viewForKey(UITransitionContextToViewKey),
             let containerView = transitionContext.containerView() else { return }
         
         presentedControllerView.frame = transitionContext.finalFrameForViewController(presentedController)
         presentedControllerView.center.y -= containerView.bounds.size.height
         
-        UIView.animateWithDuration(self.duration, animations: { 
+        UIView.animateWithDuration(self.duration, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 0.0, options: .AllowUserInteraction, animations: { 
             presentedControllerView.center.y += containerView.bounds.size.height
         }) { (completed: Bool) in
                 transitionContext.completeTransition(completed)
         }
+//        
+//        UIView.animateWithDuration(self.duration, animations: { 
+//            presentedControllerView.center.y += containerView.bounds.size.height
+//        }) { (completed: Bool) in
+//                transitionContext.completeTransition(completed)
+//        }
     }
+    
+     
     
     func animateDismissWithTransitionContext(transitionContext: UIViewControllerContextTransitioning)  {
         guard let presentedControllerView = transitionContext.viewForKey(UITransitionContextFromViewKey),
