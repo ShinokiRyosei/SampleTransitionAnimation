@@ -25,6 +25,10 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
         self.transitioningDelegate = self
     }
     
+    override func drawLayer(layer: CALayer, inContext ctx: CGContext) {
+        super.drawLayer(layer, inContext: ctx)
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,13 +58,9 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if dismissed == self {
-            return CustomPresentationAnimationController(isPresenting: true)
+            return CustomPresentationAnimationController(isPresenting: false)
         }
         return nil
     }
-    
-    
-
-
 }
 
